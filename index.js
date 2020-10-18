@@ -1,6 +1,5 @@
 import {default as MediumEditor} from "medium-editor";
 import {removeMarkers, saveSelection, restoreSelection} from "rangy-selectionsaverestore";
-console.log("DBG Rangy", removeMarkers, saveSelection, restoreSelection);
 
 var CLASS_DRAG_OVER = 'medium-editor-dragover';
 
