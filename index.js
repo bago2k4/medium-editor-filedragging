@@ -1,6 +1,6 @@
 import {default as MediumEditor} from "medium-editor";
-import {Rangy} from "rangy2";
-console.log();
+import Rangy from "rangy2";
+console.log("DBG Rangy", Rangy);
 
 var CLASS_DRAG_OVER = 'medium-editor-dragover';
 
