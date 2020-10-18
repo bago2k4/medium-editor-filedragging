@@ -1,6 +1,6 @@
 import {default as MediumEditor} from "medium-editor";
-import Rangy from "rangy-selectionsaverestore";
-console.log("DBG Rangy", Rangy);
+import {removeMarkers, saveSelection, restoreSelection} from "rangy-selectionsaverestore";
+console.log("DBG Rangy", removeMarkers, saveSelection, restoreSelection);
 
 var CLASS_DRAG_OVER = 'medium-editor-dragover';
 
@@ -56,7 +56,7 @@ var MediumEditorFiledragging = MediumEditor.Extension.extend({
   internalRemoveSelection: function() {
     // Remove the previous saved selection markers if any
     if (this._lastSelection) {
-      Rangy.removeMarkers(this._lastSelection);
+      removeMarkers(this._lastSelection);
       this._lastSelection = undefined;
     }
   },
@@ -66,7 +66,7 @@ var MediumEditorFiledragging = MediumEditor.Extension.extend({
       // markers in the body that are not needed
       this.internalRemoveSelection();
       // Save the current selection
-      this._lastSelection = Rangy.saveSelection();
+      this._lastSelection = saveSelection();
       // Unfocus the field
       this.getEditorElements().forEach(function(el){
           el.blur();
@@ -115,7 +115,7 @@ var MediumEditorFiledragging = MediumEditor.Extension.extend({
               addImageElement.dataset.thumbnail = photoThumbnail;
           }
           if (that._lastSelection) {
-              Rangy.restoreSelection(that._lastSelection);
+              restoreSelection(that._lastSelection);
               that._lastSelection = undefined;
           } else {
               that.getEditorElements()[0].focus();
