@@ -1,0 +1,31 @@
+{
+  "name": "@bago2k4/medium-editor-filedragging",
+  "version": "1.0.0",
+  "description": "An extension for yabwe/medium-editor to be able to drag & drop files into an editor.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bago2k4/medium-editor-filedragging.git"
+  },
+  "keywords": [
+    "medium-editor",
+    "yabwe/medium-editor",
+    "ME",
+    "MediumEditor",
+    "filedrag",
+    "drag&drop"
+  ],
+  "author": "Iacopo Carraro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bago2k4/medium-editor-filedragging/issues"
+  },
+  "homepage": "https://github.com/bago2k4/medium-editor-filedragging#readme",
+  "dependencies": {
+    "medium-editor": "^5.23.3",
+    "rangy2": "^2.1.0"
+  }
+}
