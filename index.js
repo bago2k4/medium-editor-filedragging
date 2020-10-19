@@ -1,5 +1,5 @@
-import {default as MediumEditor} from "medium-editor";
-import {removeMarkers, saveSelection, restoreSelection} from "rangy-selectionsaverestore";
+import MediumEditor from "medium-editor";
+import {removeMarkers, saveSelection, restoreSelection} from "@rangy/selectionsaverestore";
 
 var CLASS_DRAG_OVER = 'medium-editor-dragover';
 

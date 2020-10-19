@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/bago2k4/medium-editor-filedragging#readme",
   "dependencies": {
-    "medium-editor": "^5.23.3",
-    "rangy-selectionsaverestore": "^2.1.0"
+    "@rangy/selectionsaverestore": "^2.1.0",
+    "medium-editor": "^5.23.3"
   }
 }
